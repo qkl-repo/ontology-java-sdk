@@ -71,7 +71,6 @@ public class NeoRpc {
                 while ((c = r.read()) != -1) {
                     temp.append((char) c);
                 }
-                //System.out.println("result:"+temp.toString());
                 return JSON.parseObject(temp.toString(), Map.class);
             }
         } catch (IOException e) {

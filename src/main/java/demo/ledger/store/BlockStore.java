@@ -87,12 +87,10 @@ public class BlockStore {
     public Transaction GetTransaction(UInt256 txhash){
         byte[] key = DataEntryPrefix.getTransactionKey(txhash);
         byte[] value = db.get(key);
-        System.out.println(Helper.toHexString(value));
         ByteArrayInputStream ms = new ByteArrayInputStream(value);
         BinaryReader reader = new BinaryReader(ms);
         try {
             int height = reader.readInt();
-            System.out.println(height);
             int len = reader.available();
             byte[] message = new byte[len];
             System.arraycopy(value,value.length-len,message,0,len);
@@ -107,21 +105,21 @@ public class BlockStore {
     public Block GetBlock(UInt256 blockHash){
         byte[] key = DataEntryPrefix.getHeaderKey(blockHash);
         byte[] value = db.get(key);
-        System.out.println(Helper.toHexString(value));
+        //System.out.println(Helper.toHexString(value));
         ByteArrayInputStream ms = new ByteArrayInputStream(value);
         BinaryReader reader = new BinaryReader(ms);
         try {
             long sysFee = reader.readLong();
-            System.out.println(sysFee);
+           // System.out.println(sysFee);
             BlockHeader header = reader.readSerializable(BlockHeader.class);
             int txSize = reader.readInt();
             UInt256[] hashes = new UInt256[txSize];
-            System.out.println(header.json());
+            //System.out.println(header.json());
             for(int i=0;i<txSize;i++){
                 hashes[i] = reader.readSerializable(UInt256.class);
-                System.out.println(hashes[i].toHexString());
+                //System.out.println(hashes[i].toHexString());
                 Transaction tx = GetTransaction(hashes[i]);
-                System.out.println(tx.json());
+                //System.out.println(tx.json());
             }
             //System.out.println((txSize));
         } catch (Exception e) {
