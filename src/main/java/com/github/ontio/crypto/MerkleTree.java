@@ -19,9 +19,9 @@
 
 package com.github.ontio.crypto;
 
-import java.util.Arrays;
-
 import com.github.ontio.common.UInt256;
+
+import java.util.Arrays;
 
 /**
  *  MerkleTree

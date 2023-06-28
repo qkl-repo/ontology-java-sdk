@@ -22,12 +22,15 @@ package com.github.ontio.core.asset;
 import com.github.ontio.common.Helper;
 import com.github.ontio.core.program.Program;
 import com.github.ontio.core.program.ProgramInfo;
-import com.github.ontio.io.*;
-import com.github.ontio.crypto.ECC;
+import com.github.ontio.io.BinaryReader;
+import com.github.ontio.io.BinaryWriter;
+import com.github.ontio.io.Serializable;
 
 import java.io.IOException;
-import java.math.BigInteger;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static com.github.ontio.core.program.Program.*;
 

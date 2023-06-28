@@ -1,10 +1,7 @@
 package demo.ledger.p2p;
 
-import com.github.ontio.common.Helper;
 import com.github.ontio.io.BinaryReader;
 import com.github.ontio.io.BinaryWriter;
-
-import java.util.Arrays;
 
 public class MessageHeader {
     public int magic;

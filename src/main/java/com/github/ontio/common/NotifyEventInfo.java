@@ -1,8 +1,6 @@
 package com.github.ontio.common;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.annotation.JSONField;
-import demo.vmtest.types.StackItems;
 
 import java.util.HashMap;
 import java.util.List;

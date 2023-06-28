@@ -19,9 +19,6 @@
 
 package com.github.ontio.network.rpc;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
-
 import com.github.ontio.common.Helper;
 import com.github.ontio.common.UInt256;
 import com.github.ontio.core.block.Block;
@@ -30,6 +27,9 @@ import com.github.ontio.io.Serializable;
 import com.github.ontio.network.connect.AbstractConnector;
 import com.github.ontio.network.exception.ConnectorException;
 import com.github.ontio.network.exception.RpcException;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
 
 public class RpcClient extends AbstractConnector {
     private Interfaces rpc;

@@ -1,7 +1,10 @@
 package com.github.ontio.ontid.jwt;
 
 import com.alibaba.fastjson.annotation.JSONType;
-import com.github.ontio.ontid.*;
+import com.github.ontio.ontid.ALG;
+import com.github.ontio.ontid.Proof;
+import com.github.ontio.ontid.PubKeyType;
+import com.github.ontio.ontid.VerifiableCredential;
 
 @JSONType(orders = {"alg", "kid", "typ"})
 public class JWTHeader {

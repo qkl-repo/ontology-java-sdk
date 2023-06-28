@@ -26,7 +26,6 @@ import com.github.ontio.crypto.KeyType;
 import com.github.ontio.crypto.SignatureScheme;
 import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
 import org.bouncycastle.crypto.Digest;
-import org.bouncycastle.crypto.digests.SHA1Digest;
 import org.bouncycastle.crypto.digests.SHA256Digest;
 import org.bouncycastle.crypto.generators.KDF2BytesGenerator;
 import org.bouncycastle.crypto.kems.ECIESKeyEncapsulation;

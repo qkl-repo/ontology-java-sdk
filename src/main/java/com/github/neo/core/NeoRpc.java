@@ -3,6 +3,8 @@ package com.github.neo.core;
 import com.alibaba.fastjson.JSON;
 import com.github.ontio.common.ErrorCode;
 import com.github.ontio.network.exception.RpcException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -13,6 +15,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class NeoRpc {
+
+    private static Logger LOG = LoggerFactory.getLogger(NeoRpc.class);
 
     public static Object sendRawTransaction(String url,String sData) throws Exception {
         Object result = call(url,"sendrawtransaction", new Object[]{sData});
@@ -48,7 +52,7 @@ public class NeoRpc {
         request.put("method", method);
         request.put("params", params);
         request.put("id", 1);
-        System.out.println(String.format("POST %s", JSON.toJSONString(request)));
+        LOG.debug("POST {}", JSON.toJSONString(request));
         return request;
     }
 

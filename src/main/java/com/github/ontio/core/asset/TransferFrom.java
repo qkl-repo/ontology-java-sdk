@@ -25,7 +25,6 @@ import com.github.ontio.io.BinaryWriter;
 import com.github.ontio.io.Serializable;
 
 import java.io.IOException;
-import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,7 +1,6 @@
 package demo.ledger.store;
 
 import com.alibaba.fastjson.JSON;
-import com.github.ontio.common.Helper;
 import com.github.ontio.common.UInt256;
 import com.github.ontio.io.BinaryReader;
 import com.github.ontio.io.BinaryWriter;

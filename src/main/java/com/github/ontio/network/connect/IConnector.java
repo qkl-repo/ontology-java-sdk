@@ -19,11 +19,11 @@
 
 package com.github.ontio.network.connect;
 
-import java.io.IOException;
-
 import com.github.ontio.core.block.Block;
 import com.github.ontio.core.transaction.Transaction;
 import com.github.ontio.network.exception.ConnectorException;
+
+import java.io.IOException;
 
 public interface IConnector {
 

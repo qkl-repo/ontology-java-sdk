@@ -19,18 +19,17 @@
 
 package com.github.ontio.network.rest;
 
-import java.io.IOException;
-
+import com.alibaba.fastjson.JSON;
 import com.github.ontio.common.ErrorCode;
 import com.github.ontio.common.Helper;
 import com.github.ontio.core.block.Block;
+import com.github.ontio.core.transaction.Transaction;
 import com.github.ontio.io.Serializable;
 import com.github.ontio.network.connect.AbstractConnector;
 import com.github.ontio.network.exception.ConnectorException;
-import com.github.ontio.core.transaction.Transaction;
-
-import com.alibaba.fastjson.JSON;
 import com.github.ontio.network.exception.RestfulException;
+
+import java.io.IOException;
 
 public class RestClient extends AbstractConnector {
     private Interfaces api;

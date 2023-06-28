@@ -20,8 +20,6 @@
 package com.github.ontio.sdk.exception;
 
 
-import com.alibaba.fastjson.JSON;
-
 public class SDKException extends Exception {
 
 	private static final long serialVersionUID = -3056715808373341597L;

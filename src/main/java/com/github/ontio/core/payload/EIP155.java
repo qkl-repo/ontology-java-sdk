@@ -9,13 +9,9 @@ import com.github.ontio.core.transaction.Transaction;
 import com.github.ontio.core.transaction.TransactionType;
 import com.github.ontio.io.BinaryReader;
 import com.github.ontio.io.BinaryWriter;
-import com.github.ontio.sdk.exception.SDKException;
-import org.ethereum.util.RLP;
 import org.spongycastle.util.BigIntegers;
 
 import java.io.IOException;
-import java.math.BigInteger;
-import java.util.HashMap;
 import java.util.Map;
 
 public class EIP155 extends Transaction {

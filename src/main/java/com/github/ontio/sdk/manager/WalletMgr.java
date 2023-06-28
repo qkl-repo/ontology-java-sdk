@@ -19,25 +19,28 @@
 
 package com.github.ontio.sdk.manager;
 
+import com.alibaba.fastjson.JSON;
+import com.github.ontio.common.Address;
+import com.github.ontio.common.Common;
 import com.github.ontio.common.ErrorCode;
 import com.github.ontio.common.Helper;
-import com.github.ontio.common.Address;
-import com.github.ontio.crypto.*;
-import com.github.ontio.sdk.exception.*;
+import com.github.ontio.crypto.Curve;
+import com.github.ontio.crypto.ECC;
+import com.github.ontio.crypto.SignatureScheme;
+import com.github.ontio.sdk.exception.SDKException;
 import com.github.ontio.sdk.info.AccountInfo;
 import com.github.ontio.sdk.info.IdentityInfo;
 import com.github.ontio.sdk.wallet.Account;
 import com.github.ontio.sdk.wallet.Control;
 import com.github.ontio.sdk.wallet.Identity;
 import com.github.ontio.sdk.wallet.Wallet;
-import com.github.ontio.common.Common;
-import com.github.ontio.core.DataSignature;
-import com.alibaba.fastjson.JSON;
 
 import java.io.*;
 import java.security.SecureRandom;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.UUID;
 
 /**
  *

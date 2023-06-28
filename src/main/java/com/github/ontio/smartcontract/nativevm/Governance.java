@@ -20,11 +20,11 @@
 package com.github.ontio.smartcontract.nativevm;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.github.ontio.OntSdk;
 import com.github.ontio.account.Account;
-import com.github.ontio.common.*;
-import com.github.ontio.core.VmType;
+import com.github.ontio.common.Address;
+import com.github.ontio.common.ErrorCode;
+import com.github.ontio.common.Helper;
 import com.github.ontio.core.asset.Sig;
 import com.github.ontio.core.block.Block;
 import com.github.ontio.core.governance.*;
@@ -37,16 +37,20 @@ import com.github.ontio.network.exception.ConnectorException;
 import com.github.ontio.sdk.exception.SDKException;
 import com.github.ontio.smartcontract.nativevm.abi.NativeBuildParams;
 import com.github.ontio.smartcontract.nativevm.abi.Struct;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.text.DateFormat;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Governance {
+
     private OntSdk sdk;
     private final String contractAddress = "0000000000000000000000000000000000000007";
     private final String AUTHORIZE_INFO_POOL = "766f7465496e666f506f6f6c";
@@ -1195,6 +1199,7 @@ class TotalStake implements Serializable {
 }
 
 class SplitFeeAddress implements Serializable {
+    private static final Logger logger = LoggerFactory.getLogger(Governance.class);
     public Address address;
     public long amount;
 
@@ -1203,8 +1208,7 @@ class SplitFeeAddress implements Serializable {
         try {
             this.address = reader.readSerializable(Address.class);
         } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println(e);
+            logger.error("deserialize exception",e);
         }
         this.amount = reader.readLong();
 

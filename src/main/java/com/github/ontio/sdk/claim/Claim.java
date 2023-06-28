@@ -19,13 +19,13 @@
 
 package com.github.ontio.sdk.claim;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.annotation.JSONField;
 import com.github.ontio.account.Account;
 import com.github.ontio.common.Helper;
 import com.github.ontio.core.DataSignature;
 import com.github.ontio.crypto.Digest;
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.github.ontio.crypto.SignatureScheme;
 
 import java.text.SimpleDateFormat;

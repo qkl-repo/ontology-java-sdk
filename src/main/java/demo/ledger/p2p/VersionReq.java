@@ -1,17 +1,11 @@
 package demo.ledger.p2p;
 
-import com.alibaba.fastjson.JSON;
-import com.github.ontio.common.Helper;
 import com.github.ontio.io.BinaryReader;
 import com.github.ontio.io.BinaryWriter;
-import demo.ledger.common.BlockHeader;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
 import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
 import java.util.Random;
 
 /**

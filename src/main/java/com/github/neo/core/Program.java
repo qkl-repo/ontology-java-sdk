@@ -1,22 +1,11 @@
 package com.github.neo.core;
 
 
-import com.github.ontio.common.Common;
-import com.github.ontio.common.ErrorCode;
-import com.github.ontio.common.Helper;
-import com.github.ontio.core.scripts.ScriptBuilder;
-import com.github.ontio.core.scripts.ScriptOp;
-import com.github.ontio.crypto.ECC;
-import com.github.ontio.crypto.KeyType;
 import com.github.ontio.io.BinaryReader;
 import com.github.ontio.io.BinaryWriter;
 import com.github.ontio.io.Serializable;
-import com.github.ontio.sdk.exception.SDKException;
-import org.bouncycastle.math.ec.ECPoint;
 
 import java.io.IOException;
-import java.math.BigInteger;
-import java.util.Arrays;
 
 /**
  *

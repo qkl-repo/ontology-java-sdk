@@ -18,13 +18,16 @@
  */
 
 package com.github.ontio.network.rest;
-import java.io.BufferedReader;
-import java.io.Closeable;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
+
+import com.alibaba.fastjson.JSON;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManager;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -33,18 +36,12 @@ import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.SecureRandom;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSocketFactory;
-import javax.net.ssl.TrustManager;
-
-import com.alibaba.fastjson.JSON;
-
 public class http {
+    private static final Logger LOG = LoggerFactory.getLogger(http.class);
+
     private static final String DEFAULT_CHARSET = "UTF-8";
 
     public static String post(String url,Map<String,String> header, String body, boolean https) throws IOException, NoSuchAlgorithmException, NoSuchProviderException, KeyManagementException {
@@ -135,7 +132,7 @@ public class http {
     }
 
     public static String post(String url, Map<String, String> params, Map<String, Object> body) throws Exception {
-        System.out.println(String.format("POST url=%s,%s,%s", url,JSON.toJSONString(params),JSON.toJSONString(body)));
+        LOG.debug("POST url={},{},{}", url,JSON.toJSONString(params),JSON.toJSONString(body));
         if(url.startsWith("https")){
             return post(url+cvtParams(params), JSON.toJSONString(body), true);
         }else{

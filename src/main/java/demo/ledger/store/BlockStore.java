@@ -9,16 +9,12 @@ import com.github.ontio.io.BinaryWriter;
 import demo.ledger.common.BlockHeader;
 import demo.ledger.common.DataEntryPrefix;
 import org.iq80.leveldb.DB;
-import org.iq80.leveldb.Options;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.fusesource.leveldbjni.JniDBFactory.factory;
 
 /**
  *

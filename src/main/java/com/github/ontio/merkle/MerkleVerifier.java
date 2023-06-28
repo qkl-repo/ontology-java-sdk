@@ -23,7 +23,6 @@ import com.github.ontio.common.ErrorCode;
 import com.github.ontio.common.UInt256;
 import com.github.ontio.sdk.exception.SDKException;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

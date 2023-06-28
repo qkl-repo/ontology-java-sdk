@@ -3,24 +3,16 @@ package demo.neo;
 
 import com.alibaba.fastjson.JSON;
 import com.github.neo.core.NeoRpc;
-import com.github.ontio.account.Account;
+import com.github.neo.core.Program;
+import com.github.neo.core.SmartContract;
+import com.github.neo.core.transaction.TransactionNeo;
 import com.github.ontio.common.Address;
-import com.github.ontio.common.ErrorCode;
 import com.github.ontio.common.Helper;
 import com.github.ontio.crypto.SignatureScheme;
-import com.github.neo.core.Program;
-import com.github.neo.core.transaction.TransactionNeo;
-import com.github.neo.core.SmartContract;
-import com.github.ontio.network.exception.RpcException;
 import com.github.ontio.smartcontract.neovm.abi.AbiFunction;
 import com.github.ontio.smartcontract.neovm.abi.AbiInfo;
 
-import java.io.*;
 import java.math.BigInteger;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * neo sdk Demo

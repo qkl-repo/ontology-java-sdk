@@ -19,21 +19,21 @@
 
 package com.github.ontio.smartcontract;
 
+import com.github.ontio.OntSdk;
 import com.github.ontio.common.Address;
 import com.github.ontio.common.Common;
 import com.github.ontio.common.ErrorCode;
-import com.github.ontio.core.scripts.ScriptOp;
-import com.github.ontio.core.transaction.Attribute;
-import com.github.ontio.core.transaction.Transaction;
 import com.github.ontio.common.Helper;
 import com.github.ontio.core.payload.DeployCode;
 import com.github.ontio.core.payload.InvokeCode;
 import com.github.ontio.core.scripts.ScriptBuilder;
-import com.github.ontio.OntSdk;
+import com.github.ontio.core.scripts.ScriptOp;
+import com.github.ontio.core.transaction.Attribute;
+import com.github.ontio.core.transaction.Transaction;
 import com.github.ontio.sdk.exception.SDKException;
 
 import java.math.BigInteger;
-import java.util.*;
+import java.util.Random;
 
 /**
  *

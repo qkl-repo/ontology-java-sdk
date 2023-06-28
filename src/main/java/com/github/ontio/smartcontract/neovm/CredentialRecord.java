@@ -38,7 +38,6 @@ import com.github.ontio.smartcontract.neovm.abi.Parameter;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class CredentialRecord {
     private OntSdk sdk;

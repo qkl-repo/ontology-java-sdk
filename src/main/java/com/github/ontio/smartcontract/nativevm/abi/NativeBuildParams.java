@@ -20,13 +20,12 @@
 package com.github.ontio.smartcontract.nativevm.abi;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import com.github.ontio.account.Account;
-import com.github.ontio.common.*;
+import com.github.ontio.common.Address;
+import com.github.ontio.common.ErrorCode;
+import com.github.ontio.common.UInt256;
 import com.github.ontio.core.ontid.Attribute;
 import com.github.ontio.core.scripts.ScriptBuilder;
 import com.github.ontio.core.scripts.ScriptOp;
-import com.github.ontio.core.transaction.Transaction;
 import com.github.ontio.io.BinaryWriter;
 import com.github.ontio.sdk.exception.SDKException;
 
@@ -34,8 +33,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.lang.reflect.Array;
 import java.math.BigInteger;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
 import java.util.ArrayList;
 import java.util.List;
 

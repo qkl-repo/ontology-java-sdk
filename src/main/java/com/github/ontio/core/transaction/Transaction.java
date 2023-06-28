@@ -19,18 +19,20 @@
 
 package com.github.ontio.core.transaction;
 
-import java.io.*;
-import java.util.*;
-import java.util.stream.*;
-
-import com.alibaba.fastjson.JSON;
-import com.github.ontio.common.*;
+import com.github.ontio.common.Address;
 import com.github.ontio.core.Inventory;
 import com.github.ontio.core.InventoryType;
 import com.github.ontio.core.asset.Sig;
 import com.github.ontio.core.payload.EIP155;
 import com.github.ontio.io.BinaryReader;
 import com.github.ontio.io.BinaryWriter;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 /**
  *

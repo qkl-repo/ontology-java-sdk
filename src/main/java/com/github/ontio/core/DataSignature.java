@@ -25,10 +25,8 @@ import com.github.ontio.common.ErrorCode;
 import com.github.ontio.crypto.SignatureScheme;
 import com.github.ontio.io.BinaryReader;
 import com.github.ontio.io.BinaryWriter;
-import com.github.ontio.sdk.exception.SDKException;
 
 import java.io.IOException;
-import java.util.HashSet;
 
 
 public class DataSignature implements Signable {

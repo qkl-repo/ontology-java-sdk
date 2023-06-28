@@ -19,8 +19,6 @@
 
 package com.github.ontio.common;
 
-import com.alibaba.fastjson.JSON;
-
 /**
  * Custom type which inherits base class defines 32-bit data,
  * it mostly used to defined transaction identity

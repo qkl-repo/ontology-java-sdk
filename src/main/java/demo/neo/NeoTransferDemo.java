@@ -3,23 +3,22 @@ package demo.neo;
 
 import com.alibaba.fastjson.JSON;
 import com.github.neo.core.*;
-import com.github.neo.core.transaction.TransactionNeo;
 import com.github.neo.core.transaction.TransferTransaction;
 import com.github.ontio.common.*;
 import com.github.ontio.crypto.ECC;
 import com.github.ontio.crypto.SignatureScheme;
 import com.github.ontio.network.exception.RpcException;
-import com.github.ontio.smartcontract.neovm.abi.AbiFunction;
-import com.github.ontio.smartcontract.neovm.abi.AbiInfo;
+import org.bouncycastle.math.ec.ECPoint;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import org.bouncycastle.math.ec.ECPoint;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 /**
  * neo sdk Demo

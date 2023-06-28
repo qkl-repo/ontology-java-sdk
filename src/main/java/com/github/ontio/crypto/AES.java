@@ -19,16 +19,16 @@
 
 package com.github.ontio.crypto;
 
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+import javax.crypto.*;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
+import javax.security.auth.DestroyFailedException;
 import java.io.UnsupportedEncodingException;
 import java.security.*;
 import java.security.spec.InvalidParameterSpecException;
 import java.util.Arrays;
-
-import javax.crypto.*;
-import javax.crypto.spec.*;
-import javax.security.auth.DestroyFailedException;
-
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 public class AES {
 	private static final String KEY_ALGORITHM = "AES";

@@ -19,14 +19,14 @@
 
 package com.github.ontio.common;
 
-import java.io.IOException;
-import java.nio.*;
-import java.util.Arrays;
-
 import com.github.ontio.io.BinaryReader;
 import com.github.ontio.io.BinaryWriter;
 import com.github.ontio.io.Serializable;
-import com.github.ontio.io.*;
+
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.util.Arrays;
 
 /**
  * Custom type base abstract class, it defines the storage and the serialization

@@ -21,7 +21,9 @@ package com.github.ontio.io;
 
 import com.github.ontio.common.Helper;
 
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 
 /**
  * Serialize interface

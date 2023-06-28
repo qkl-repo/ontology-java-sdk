@@ -1,11 +1,9 @@
 package com.github.ontio.crypto;
 
 import com.github.ontio.common.ErrorCode;
-import com.github.ontio.common.Helper;
 import com.github.ontio.sdk.exception.SDKException;
 import org.bouncycastle.asn1.*;
 
-import java.awt.*;
 import java.io.IOException;
 import java.math.BigInteger;
 import java.security.PrivateKey;

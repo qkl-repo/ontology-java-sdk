@@ -1,8 +1,5 @@
 package com.github.ontio.ontid;
 
-import com.github.ontio.crypto.Digest;
-import com.github.ontio.sdk.exception.SDKException;
-
 // EcdsaSecp224r1VerificationKey2019      ES224    ECDSA P-224 SHA-224
 // EcdsaSecp256r1VerificationKey2019      ES256    ECDSA P-256 SHA-256
 // EcdsaSecp384r1VerificationKey2019      ES384    ECDSA P-384 SHA-384

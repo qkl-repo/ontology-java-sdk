@@ -1,7 +1,5 @@
 package com.github.ontio.smartcontract.nativevm.abi;
 
-import com.github.ontio.common.Address;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -24,8 +24,8 @@ import com.github.ontio.common.Helper;
 import com.github.ontio.crypto.Base58;
 import com.github.ontio.crypto.Digest;
 import com.github.ontio.crypto.bip32.derivation.CkdFunction;
-import com.github.ontio.crypto.bip32.derivation.Derivation;
 import com.github.ontio.crypto.bip32.derivation.CkdFunctionDerive;
+import com.github.ontio.crypto.bip32.derivation.Derivation;
 import com.github.ontio.crypto.bip32.derivation.Derive;
 import com.github.ontio.sdk.exception.SDKException;
 import org.spongycastle.math.ec.ECPoint;
@@ -35,9 +35,7 @@ import java.math.BigInteger;
 import static com.github.ontio.crypto.bip32.ByteArrayWriter.head32;
 import static com.github.ontio.crypto.bip32.ByteArrayWriter.tail32;
 import static com.github.ontio.crypto.bip32.HdKey.parse256;
-import static com.github.ontio.crypto.bip32.Secp256r1SC.gMultiplyAndAddPoint;
-import static com.github.ontio.crypto.bip32.Secp256r1SC.n;
-import static com.github.ontio.crypto.bip32.Secp256r1SC.pointSerP;
+import static com.github.ontio.crypto.bip32.Secp256r1SC.*;
 import static com.github.ontio.crypto.bip32.derivation.CharSequenceDerivation.isHardened;
 
 public final class HdPublicKey implements

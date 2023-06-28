@@ -7,7 +7,6 @@ import org.bouncycastle.jcajce.spec.SM2ParameterSpec;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.security.spec.AlgorithmParameterSpec;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Signature {

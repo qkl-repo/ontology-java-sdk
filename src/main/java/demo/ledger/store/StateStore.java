@@ -1,7 +1,6 @@
 package demo.ledger.store;
 
 import com.github.ontio.common.Address;
-import com.github.ontio.common.Helper;
 import com.github.ontio.common.UInt256;
 import com.github.ontio.core.payload.DeployCode;
 import com.github.ontio.io.BinaryReader;

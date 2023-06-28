@@ -27,9 +27,8 @@ import com.github.ontio.crypto.Curve;
 import com.github.ontio.crypto.Digest;
 import com.github.ontio.crypto.bip32.derivation.CkdFunction;
 import com.github.ontio.crypto.bip32.derivation.CkdFunctionDerive;
-import com.github.ontio.crypto.bip32.derivation.Derive;
 import com.github.ontio.crypto.bip32.derivation.Derivation;
-
+import com.github.ontio.crypto.bip32.derivation.Derive;
 import com.github.ontio.sdk.exception.SDKException;
 import io.github.novacrypto.bip39.SeedCalculator;
 import io.github.novacrypto.bip39.wordlists.English;
@@ -48,7 +47,6 @@ import static com.github.ontio.crypto.bip32.HdKey.parse256;
 import static com.github.ontio.crypto.bip32.HdKey.ser256;
 import static com.github.ontio.crypto.bip32.Secp256r1SC.n;
 import static com.github.ontio.crypto.bip32.derivation.CharSequenceDerivation.isHardened;
-
 import static io.github.novacrypto.toruntime.CheckedExceptionToRuntime.toRuntime;
 
 public class HdPrivateKey implements

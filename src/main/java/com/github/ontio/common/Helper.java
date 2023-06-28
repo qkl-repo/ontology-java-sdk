@@ -19,11 +19,7 @@
 
 package com.github.ontio.common;
 
-import com.github.ontio.crypto.Digest;
-
 import java.math.BigInteger;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;

@@ -21,8 +21,6 @@
 
 package com.github.ontio.crypto.bip32.derivation;
 
-import com.github.ontio.crypto.bip32.HdKey;
-
 public interface Derivation<Path> {
 
     /**

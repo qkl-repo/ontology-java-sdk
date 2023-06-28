@@ -19,29 +19,27 @@
 
 package com.github.ontio.core.block;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.math.BigInteger;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.function.Function;
-
 import com.alibaba.fastjson.JSON;
-import com.github.ontio.common.*;
+import com.github.ontio.common.Address;
+import com.github.ontio.common.Helper;
+import com.github.ontio.common.UInt256;
 import com.github.ontio.core.Inventory;
 import com.github.ontio.core.InventoryType;
 import com.github.ontio.core.payload.Bookkeeping;
 import com.github.ontio.core.payload.DeployCode;
 import com.github.ontio.core.payload.InvokeCode;
 import com.github.ontio.core.transaction.Transaction;
-import com.github.ontio.core.transaction.TransactionType;
 import com.github.ontio.io.BinaryReader;
 import com.github.ontio.io.BinaryWriter;
 import com.github.ontio.io.Serializable;
-import com.github.ontio.crypto.ECC;
-import org.bouncycastle.math.ec.ECPoint;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Function;
 
 /**
  * block

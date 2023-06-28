@@ -19,22 +19,18 @@
 
 package com.github.ontio.smartcontract.nativevm;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.github.ontio.OntSdk;
 import com.github.ontio.account.Account;
 import com.github.ontio.common.Address;
 import com.github.ontio.common.ErrorCode;
 import com.github.ontio.common.Helper;
+import com.github.ontio.core.asset.State;
 import com.github.ontio.core.transaction.Transaction;
-import com.github.ontio.core.asset.*;
 import com.github.ontio.sdk.exception.SDKException;
-import com.github.ontio.smartcontract.nativevm.abi.AbiFunction;
-import com.github.ontio.smartcontract.nativevm.abi.AbiInfo;
 import com.github.ontio.smartcontract.nativevm.abi.NativeBuildParams;
 import com.github.ontio.smartcontract.nativevm.abi.Struct;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,6 +1,5 @@
 package com.github.ontio.core.governance;
 
-import com.github.ontio.common.Helper;
 import com.github.ontio.io.BinaryReader;
 import com.github.ontio.io.BinaryWriter;
 import com.github.ontio.io.Serializable;

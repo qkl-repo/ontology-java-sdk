@@ -2,7 +2,10 @@ package com.github.ontio.sidechain.smartcontract.governance;
 
 import com.github.ontio.OntSdk;
 import com.github.ontio.account.Account;
-import com.github.ontio.common.*;
+import com.github.ontio.common.Address;
+import com.github.ontio.common.ErrorCode;
+import com.github.ontio.common.Helper;
+import com.github.ontio.common.UInt256;
 import com.github.ontio.core.governance.*;
 import com.github.ontio.core.sidechaingovernance.NodeToSideChainParams;
 import com.github.ontio.core.transaction.Transaction;

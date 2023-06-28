@@ -26,8 +26,6 @@ import com.github.ontio.common.Address;
 import com.github.ontio.common.ErrorCode;
 import com.github.ontio.common.Helper;
 import com.github.ontio.core.asset.State;
-import com.github.ontio.core.asset.TransferFrom;
-import com.github.ontio.core.asset.Transfers;
 import com.github.ontio.core.transaction.Transaction;
 import com.github.ontio.sdk.exception.SDKException;
 import com.github.ontio.smartcontract.nativevm.abi.NativeBuildParams;

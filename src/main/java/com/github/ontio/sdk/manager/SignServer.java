@@ -23,12 +23,14 @@ import com.alibaba.fastjson.JSON;
 import com.github.ontio.common.ErrorCode;
 import com.github.ontio.network.exception.RpcException;
 import com.github.ontio.network.rpc.Interfaces;
-import com.github.ontio.network.rpc.RpcClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class SignServer {
+    private Logger log = LoggerFactory.getLogger(SignServer.class);
     private Interfaces rpcClient;
     private String url = "";
 
@@ -110,7 +112,8 @@ public class SignServer {
 
     private Object send(Map req) throws Exception {
         Map response = (Map) rpcClient.send(req);
-        System.out.println(response);
+        //System.out.println(response);
+        log.info("send response: {}",response);
         if (response == null) {
             throw new RpcException(0, ErrorCode.ConnectUrlErr(url + "response is null. maybe is connect error"));
         } else if ((int) response.get("error_code") == 0) {

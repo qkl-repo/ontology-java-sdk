@@ -6,7 +6,6 @@ import com.github.ontio.crypto.SignatureScheme;
 import com.github.ontio.sdk.exception.SDKException;
 import com.github.ontio.sdk.wallet.*;
 
-import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;

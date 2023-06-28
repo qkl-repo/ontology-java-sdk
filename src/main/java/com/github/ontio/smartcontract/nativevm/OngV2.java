@@ -31,9 +31,9 @@ import com.github.ontio.sdk.exception.SDKException;
 import com.github.ontio.smartcontract.nativevm.abi.NativeBuildParams;
 import com.github.ontio.smartcontract.nativevm.abi.Struct;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-import java.math.BigInteger;
 
 
 /**

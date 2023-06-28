@@ -19,10 +19,13 @@
 
 package com.github.ontio.io;
 
-import java.io.*;
-import java.nio.*;
-
 import org.bouncycastle.math.ec.ECPoint;
+
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 
 public class BinaryWriter implements AutoCloseable {
 	private DataOutputStream writer;
