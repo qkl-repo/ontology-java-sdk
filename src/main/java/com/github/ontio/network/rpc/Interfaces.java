@@ -22,6 +22,8 @@ package com.github.ontio.network.rpc;
 import com.alibaba.fastjson.JSON;
 import com.github.ontio.common.ErrorCode;
 import com.github.ontio.network.exception.RpcException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -36,6 +38,7 @@ import java.util.Map;
  *
  */
 public class Interfaces {
+    private final Logger log = LoggerFactory.getLogger(Interfaces.class);
     private final URL url;
 
 
@@ -73,7 +76,7 @@ public class Interfaces {
         request.put("method", method);
         request.put("params", params);
         request.put("id", 1);
-        System.out.println(String.format("POST url=%s,%s", this.url, JSON.toJSONString(request)));
+        log.debug("POST url={},{}", this.url, JSON.toJSONString(request));
         return request;
     }
 
@@ -85,7 +88,8 @@ public class Interfaces {
             connection.setConnectTimeout(10000);
             connection.setReadTimeout(10000);
             connection.setDoOutput(true);
-            connection.setRequestProperty("Content-Type", "application/json;charset=utf-8");//set parameter type to JSON format
+            //set parameter type to JSON format
+            connection.setRequestProperty("Content-Type", "application/json;charset=utf-8");
             try (OutputStreamWriter w = new OutputStreamWriter(connection.getOutputStream())) {
                 w.write(JSON.toJSONString(request));
             }
@@ -95,7 +99,7 @@ public class Interfaces {
                 while ((c = r.read()) != -1) {
                     temp.append((char) c);
                 }
-                //System.out.println("result:"+temp.toString());
+                log.debug("result==>>>{}", temp.toString());
                 return JSON.parseObject(temp.toString(), Map.class);
             }
         } catch (IOException e) {
